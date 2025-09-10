@@ -3,6 +3,7 @@ from main.views import create_news, show_main, show_news, show_xml, show_json, s
 
 app_name = 'main'
 
+
 urlpatterns = [
     path('', show_main, name='show_main'),
     path('news/<str:id>/', show_news, name='show_news'),
